@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Li's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </header>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <section id="projects">
+        <p class="projects-section__text__p1">Browse My Recent</p>
+        <h1 class="projects-title">Projects</h1>
+    </section>
+
+    <script src="script.js"></script> 
+</body>
+</html>

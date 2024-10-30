@@ -1,0 +1,3 @@
+1) Change the "Jack Li" in the Header to my logo (designed by tian)
+2) Fix the different icon sizes in the profile section
+3) Make my profile picture circular (maybe get tian to fill the background one colour)

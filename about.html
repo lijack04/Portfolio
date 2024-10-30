@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Li's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </header>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <!-- EVERYTHING ABOVE IS BOILERPLATE FOR THE HEADER -->
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <span class="about-title">Hey, I'm Jack!</span>
+        <div class="about-title-image">
+            <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="text-container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta deleniti aliquid ipsum enim rerum! Doloribus iure inventore placeat dolorum unde distinctio officia rerum voluptas at fugiat neque expedita recusandae ipsum, minus magnam illo magni repudiandae. Fuga, illo enim. Deserunt omnis assumenda doloremque ipsam, qui illo temporibus, eum dignissimos beatae error dolores harum molestias labore odio reiciendis incidunt a dolorum libero explicabo voluptatibus soluta provident impedit aspernatur! Blanditiis beatae tempore a aspernatur qui sed eum, commodi quaerat repellendus ullam odio quo dolore? Eveniet hic perspiciatis reprehenderit reiciendis possimus placeat laborum nulla in esse natus similique, quis, repellat aspernatur dicta voluptas, vel amet unde magni dolor deserunt sed tempora accusantium? Labore aut dicta rem aliquam dignissimos maiores. Eveniet sed explicabo consequatur inventore quae culpa ea laudantium rem modi, nisi deleniti iure dolores quos obcaecati deserunt ut ullam quam nam, alias, repudiandae numquam libero minus. Facilis ut aut sint fugiat sed commodi cumque consequuntur iste, pariatur sunt at ad praesentium voluptas laboriosam, nobis dignissimos ea veritatis vero laudantium doloribus, necessitatibus reiciendis a soluta. Distinctio, animi ut exercitationem vitae dicta vel minus voluptates. Rem animi officia hic inventore numquam. Possimus temporibus ullam a id veritatis officia obcaecati facilis, laborum voluptatibus, cum enim. Eaque, ullam!</p>
+        </div> 
+
+        <div class="section-container">
+            <div class="about-section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>2+years <br>Backend Dev</p>
+                    </div>     
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>BSE Computer Science<br>Minor Computer Sciene</p>
+                    </div>
+                </div>   
+                <div class="text-container">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, odio?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, odio?</p>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script> 
+</body>
+</html>

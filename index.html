@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Li's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </header>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <header>
+            <div class="logo">Jack Li</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="projects.html">Projects</a></li> 
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                </div>
+            </div>
+        </header>
+    </nav>
+
+<!-- Everything above will be needed at the top of every page -->
+
+<!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="profile-section__pic-container">
+            <img src="./assets/headshot.png" alt="Jack Li's Headshot">
+        </div>
+        <div class="profile-section__text">
+            <p class="profile-section__text__p1">Hello, I'm</p>
+            <h1 class="profile-title">Jack Li</h1>
+            <p class="profile-section__text__p2">Computer Science @ The University of Michigan</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="profile-socials-container">
+                <img src="./assets/linkedin.png" alt="Jack Li's LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/li-jack/'">
+                <img src="./assets/github.png" alt="Jack Li's Github" class="icon" onclick="location.href='https://github.com/lijack04'">
+                <img src="./assets/email.png" alt="Jack Li's Email" class="icon" onclick="location.href='mailto:lijacka@umich.edu'">
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ABOUT SECTION -->
+<section>
+    <div class="section-container">
+        <div class="about-section__pic-container">
+            <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2+years <br>Backend Dev</p>
+                </div>     
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>BSE Computer Science<br>Minor Computer Sciene</p>
+                </div>
+            </div>   
+            <div class="text-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, odio?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, odio?</p>
+            </div>   
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+
+</section>
+
+    <script src="script.js"></script> 
+</body>
+</html>
